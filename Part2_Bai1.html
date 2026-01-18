@@ -1,0 +1,132 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div>
+        <p>Dolphins team</p>
+        <input type="text" id="dophins-score-1" value="96">
+        <input type="text" id="dophins-score-2" value="108">
+        <input type="text" id="dophins-score-3" value="89">
+      
+    </div>
+    <div> 
+        <p>Koalas team</p>
+        <input type="text" id="koalas-score-1" value="88">
+        <input type="text" id="koalas-score-2" value="91">
+        <input type="text" id="koalas-score-3" value="110">
+    </div>
+    <button id="btnCal">Calculate</button>
+</body>
+<script>
+
+    var btnCal = document.getElementById('btnCal');
+    btnCal.addEventListener('click',()=>{
+
+        var calcAverage = (a,b,c) =>{
+            return (a+b+c)/3;
+        };
+
+        function checkWinner(avgDolphins, avgKoalas){
+            if (avgDolphins >= 2* avgKoalas){
+                console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+            }else if (avgKoalas >= 2 * avgDolphins){
+                console.log(`Koaloas win (${avgKoalas} vs ${avgDolphins})`);
+            }else{
+                console.log(`No team wins`)
+            }
+        };
+
+         var d1 = parseInt(document.getElementById('dophins-score-1').value);
+        var d2 = parseInt(document.getElementById('dophins-score-2').value);
+        var d3 = parseInt(document.getElementById('dophins-score-3').value);
+        var scoreDolphins = calcAverage(d1,d2,d3);
+         console.log(scoreDolphins);
+
+         
+        var k1 = parseInt(document.getElementById('koalas-score-1').value);
+        var k2 = parseInt(document.getElementById('koalas-score-2').value);
+        var k3 = parseInt(document.getElementById('koalas-score-3').value);
+        var scoreKoalas = calcAverage(k1,k2,k3);
+        console.log(scoreKoalas);
+
+
+        checkWinner(scoreDolphins,scoreKoalas)
+      
+   
+    })
+    
+
+
+</script>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <div>
+        <p>Dolphins team</p>
+        <input type="text" id="dophins-score-1" value="96">
+        <input type="text" id="dophins-score-2" value="108">
+        <input type="text" id="dophins-score-3" value="89">
+      
+    </div>
+    <div> 
+        <p>Koalas team</p>
+        <input type="text" id="koalas-score-1" value="88">
+        <input type="text" id="koalas-score-2" value="91">
+        <input type="text" id="koalas-score-3" value="110">
+    </div>
+    <button id="btnCal">Calculate</button>
+</body>
+<script>
+
+    var btnCal = document.getElementById('btnCal');
+    btnCal.addEventListener('click',()=>{
+
+        var calcAverage = (a,b,c) =>{
+            return (a+b+c)/3;
+        };
+
+        function checkWinner(avgDolphins, avgKoalas){
+            if (avgDolphins >= 2* avgKoalas){
+                console.log(`Dolphins win (${avgDolphins} vs ${avgKoalas})`);
+            }else if (avgKoalas >= 2 * avgDolphins){
+                console.log(`Koaloas win (${avgKoalas} vs ${avgDolphins})`);
+            }else{
+                console.log(`No team wins`)
+            }
+        };
+
+         var d1 = parseInt(document.getElementById('dophins-score-1').value);
+        var d2 = parseInt(document.getElementById('dophins-score-2').value);
+        var d3 = parseInt(document.getElementById('dophins-score-3').value);
+        var scoreDolphins = calcAverage(d1,d2,d3);
+         console.log(scoreDolphins);
+
+         
+        var k1 = parseInt(document.getElementById('koalas-score-1').value);
+        var k2 = parseInt(document.getElementById('koalas-score-2').value);
+        var k3 = parseInt(document.getElementById('koalas-score-3').value);
+        var scoreKoalas = calcAverage(k1,k2,k3);
+        console.log(scoreKoalas);
+
+
+        checkWinner(scoreDolphins,scoreKoalas)
+      
+   
+    })
+    
+
+
+</script>
+>>>>>>> be9a158bb50765aee72fef07cd2f6cfcd3e4b4f3
+</html>

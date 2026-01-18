@@ -1,0 +1,55 @@
+<<<<<<< HEAD
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <p>Enter bill value: </p>
+        <input type="text" id="bill-value">
+        <button id="btnCalc">Calculate</button>
+    </div>
+</body>
+<script>
+    const btnCalc = document.getElementById('btnCalc');
+    btnCalc.addEventListener('click', () => {
+        var billValue = parseFloat(document.getElementById('bill-value').value);
+        var tip = billValue >= 50 && billValue <= 300 ? billValue * 0.15 : billValue * 0.2;
+        var total = billValue + tip;
+        console.log('The bill was ' + billValue.toFixed(2) + ', the tip was ' + tip.toFixed(2) + ' , and the total value ' + total.toFixed(2));
+
+    });
+</script>
+
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p>Enter bill value: </p>
+        <input type="text" id="bill-value">
+        <button id="btnCalc">Calculate</button>
+    </div>
+</body>
+<script>
+    const btnCalc  = document.getElementById('btnCalc');
+    btnCalc.addEventListener('click',()=>{
+        var billValue = parseFloat(document.getElementById('bill-value').value);
+        var tip = billValue>=50 && billValue<=300 ? billValue*0.15 : billValue* 0.2;
+       var total = billValue + tip;   
+       console.log('The bill was '+billValue.toFixed(2)+', the tip was '+tip.toFixed(2)+' , and the total value '+total.toFixed(2));
+       
+    });
+</script>
+>>>>>>> be9a158bb50765aee72fef07cd2f6cfcd3e4b4f3
+</html>
